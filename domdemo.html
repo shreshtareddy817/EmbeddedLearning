@@ -224,7 +224,12 @@ function demoQuerySelector(){
 
     firstCourse.style.backgroundColor = "yellow";
 
-    showOutput("Only the first important course is selected.");
+    showOutput(
+        "Method: querySelector()\n\n" +
+        "It selects the first element that matches a CSS selector.\n\n" +
+        "Selector used: .important\n" +
+        "Only the first important course is selected."
+      );
 }
 
 function demoQuerySelectorAll(){
@@ -235,7 +240,12 @@ function demoQuerySelectorAll(){
         courses[i].style.backgroundColor = "lightgreen";
     }
 
-    showOutput("Number of important courses selected: " + courses.length);
+    showOutput(
+        "Method: querySelectorAll()\n\n" +
+        "It selects all elements that match a CSS selector.\n\n" +
+        "Selector used: .important\n" +
+        "Number of important courses selected: " + allImportantCourses.length
+      );
 }
 
 function resetPage(){
